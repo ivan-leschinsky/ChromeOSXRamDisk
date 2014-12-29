@@ -1,5 +1,5 @@
 install:
-	[ ! -d /usr/local/bin/ ] && mkdir -p /usr/local/bin
+	mkdir -p /usr/local/bin
 	cp ./ChromeRamDisk.sh /usr/local/bin/
 	cp ./com.alanthing.ChromeRamDisk.plist ~/Library/LaunchAgents/
 	[ -f ~/Library/LaunchAgents/com.alanthing.ChromeRamDisk.plist ] && launchctl load -w ~/Library/LaunchAgents/com.alanthing.ChromeRamDisk.plist
